@@ -14,6 +14,11 @@
 		68FE8C5A1B6DD8FF0018C557 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FE8C591B6DD8FF0018C557 /* Images.xcassets */; };
 		68FE8C5D1B6DD8FF0018C557 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68FE8C5B1B6DD8FF0018C557 /* LaunchScreen.xib */; };
 		68FE8C691B6DD8FF0018C557 /* messageTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE8C681B6DD8FF0018C557 /* messageTestTests.m */; };
+		68FE8C751B6DDC520018C557 /* messageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE8C741B6DDC520018C557 /* messageCell.m */; };
+		68FE8C781B6DDD9E0018C557 /* messageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE8C771B6DDD9E0018C557 /* messageModel.m */; };
+		68FE8C7B1B6DE51B0018C557 /* 消息框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FE8C791B6DE51B0018C557 /* 消息框@2x.png */; };
+		68FE8C7C1B6DE51B0018C557 /* 消息框@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FE8C7A1B6DE51B0018C557 /* 消息框@3x.png */; };
+		68FE8C7E1B6DF0220018C557 /* fbb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68FE8C7D1B6DF0220018C557 /* fbb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,13 @@
 		68FE8C621B6DD8FF0018C557 /* messageTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messageTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FE8C671B6DD8FF0018C557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FE8C681B6DD8FF0018C557 /* messageTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = messageTestTests.m; sourceTree = "<group>"; };
+		68FE8C731B6DDC520018C557 /* messageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageCell.h; sourceTree = "<group>"; };
+		68FE8C741B6DDC520018C557 /* messageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageCell.m; sourceTree = "<group>"; };
+		68FE8C761B6DDD9E0018C557 /* messageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageModel.h; sourceTree = "<group>"; };
+		68FE8C771B6DDD9E0018C557 /* messageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageModel.m; sourceTree = "<group>"; };
+		68FE8C791B6DE51B0018C557 /* 消息框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息框@2x.png"; sourceTree = "<group>"; };
+		68FE8C7A1B6DE51B0018C557 /* 消息框@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息框@3x.png"; sourceTree = "<group>"; };
+		68FE8C7D1B6DF0220018C557 /* fbb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fbb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +93,17 @@
 		68FE8C4B1B6DD8FF0018C557 /* messageTest */ = {
 			isa = PBXGroup;
 			children = (
+				68FE8C7D1B6DF0220018C557 /* fbb.jpg */,
+				68FE8C791B6DE51B0018C557 /* 消息框@2x.png */,
+				68FE8C7A1B6DE51B0018C557 /* 消息框@3x.png */,
 				68FE8C501B6DD8FF0018C557 /* AppDelegate.h */,
 				68FE8C511B6DD8FF0018C557 /* AppDelegate.m */,
 				68FE8C531B6DD8FF0018C557 /* ViewController.h */,
 				68FE8C541B6DD8FF0018C557 /* ViewController.m */,
+				68FE8C731B6DDC520018C557 /* messageCell.h */,
+				68FE8C741B6DDC520018C557 /* messageCell.m */,
+				68FE8C761B6DDD9E0018C557 /* messageModel.h */,
+				68FE8C771B6DDD9E0018C557 /* messageModel.m */,
 				68FE8C561B6DD8FF0018C557 /* Main.storyboard */,
 				68FE8C591B6DD8FF0018C557 /* Images.xcassets */,
 				68FE8C5B1B6DD8FF0018C557 /* LaunchScreen.xib */,
@@ -199,9 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FE8C7E1B6DF0220018C557 /* fbb.jpg in Resources */,
+				68FE8C7B1B6DE51B0018C557 /* 消息框@2x.png in Resources */,
 				68FE8C581B6DD8FF0018C557 /* Main.storyboard in Resources */,
 				68FE8C5D1B6DD8FF0018C557 /* LaunchScreen.xib in Resources */,
 				68FE8C5A1B6DD8FF0018C557 /* Images.xcassets in Resources */,
+				68FE8C7C1B6DE51B0018C557 /* 消息框@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68FE8C551B6DD8FF0018C557 /* ViewController.m in Sources */,
+				68FE8C751B6DDC520018C557 /* messageCell.m in Sources */,
+				68FE8C781B6DDD9E0018C557 /* messageModel.m in Sources */,
 				68FE8C521B6DD8FF0018C557 /* AppDelegate.m in Sources */,
 				68FE8C4F1B6DD8FF0018C557 /* main.m in Sources */,
 			);
