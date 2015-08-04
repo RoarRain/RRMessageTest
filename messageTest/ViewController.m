@@ -78,17 +78,20 @@
     msgCell.userImage.layer.masksToBounds = YES;
     msgCell.userImage.layer.cornerRadius = msgCell.userImage.frame.size.height/2;
     msgCell.msgLabel.text = model.content;
-    NSDictionary* attribute = @{ NSFontAttributeName : [UIFont systemFontOfSize:15.0] };
-    CGSize textSize1 = [model.content boundingRectWithSize:tableView.bounds.size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine attributes:attribute context:nil].size;
+    msgCell.msgLabel.font = [UIFont systemFontOfSize:15.0];
+    NSDictionary* attribute = @{ NSFontAttributeName : msgCell.msgLabel.font };
+    CGSize textSize1 = [model.content boundingRectWithSize:CGSizeMake(msgCell.msgLabel.frame.size.width,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
+    msgCell.msgLabel.text = model.content;
     CGRect rect = msgCell.msgLabel.frame;
-    rect.size.height = textSize1.height + 30;
+    rect.size.height = textSize1.height +20;
     msgCell.msgLabel.frame = rect;
     CGRect imageframe = msgCell.msgBgImageView.frame;
     
-    imageframe.size.height = textSize1.height + 50;
+    imageframe.size.height = textSize1.height +40;
     msgCell.msgBgImageView.frame = imageframe;
     msgCell.msgBgImageView.image = [[UIImage imageNamed:@"消息框"] resizableImageWithCapInsets:UIEdgeInsetsMake(50, 50, 10, 10)];
     return msgCell;
+
 
 }
 
